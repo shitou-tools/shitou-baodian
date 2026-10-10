@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>云端历史 · 石头宝典</title><link rel="icon" href="icons/32.png"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="history.css"></head>
+<body class="history-page">
+<main class="history-shell">
+  <header class="history-header"><a class="history-back" href="manager.html">← 返回资料库</a><span class="eyebrow">石头宝典 / CLOUD ARCHIVE</span></header>
+  <section class="history-hero"><div><span class="section-number">每一份积累，都有来处</span><h1>云端历史<span>。</span></h1><p>回看、下载，或从某个时刻重新开始。</p></div><div class="archive-mark" aria-hidden="true">↙</div></section>
+  <fieldset id="history-fields">
+    <div class="history-toolbar"><div><h2>备份记录</h2><p class="muted small">从新到旧 · 每页 10 份</p></div><button id="history-refresh" type="button" class="secondary">刷新记录 ↻</button></div>
+    <p id="history-notice" class="history-notice" role="status">正在读取云端历史…</p>
+    <p id="history-error" class="error-banner" role="alert" hidden></p>
+    <p id="history-upgrade" class="history-notice" hidden>当前云端服务尚未支持删除，请更新云函数并配置备份目录的删除权限。</p>
+    <div id="history-list" aria-label="备份列表"></div>
+    <nav class="history-pagination" aria-label="历史分页"><button id="history-prev" type="button" class="secondary" disabled>← 上一页</button><span id="history-page-number" aria-live="polite">第 1 页</span><button id="history-next" type="button" class="secondary" disabled>下一页 →</button></nav>
+  </fieldset>
+  <footer class="history-footer"><span>石头宝典 V1.3.3</span><p>删除只影响选中的云端快照，本地提示词不受影响。旧备份不会自动清理。</p></footer>
+</main>
+<dialog id="history-confirm" aria-labelledby="history-confirm-title"><div class="dialog-heading"><h2 id="history-confirm-title"></h2></div><p id="history-confirm-message"></p><div class="dialog-actions"><button id="history-cancel" type="button" class="secondary" autofocus>取消</button><button id="history-accept" type="button" class="primary">确认</button></div></dialog>
+<script type="module" src="src/history.js"></script>
+</body></html>
