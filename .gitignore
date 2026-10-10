@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+release/
+deployed-endpoint.txt
+*credentials*
+*secret*
+docs/screenshots/
+.DS_Store
