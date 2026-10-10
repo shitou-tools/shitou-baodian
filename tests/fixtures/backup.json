@@ -1,0 +1,6 @@
+{
+  "app": "prompt-library", "version": 2, "exportedAt": "2026-10-09T06:00:00.000Z",
+  "categories": [{"id":"uncategorized","name":"未分类"},{"id":"writing","name":"文案创作"}],
+  "prompts": [{"id":"test-import-1","title":"产品文案 · 先讲清楚，再打动人","body":"为 {{产品}} 写一段简洁的介绍。\n从具体使用场景切入，写清一个最有用的特点。\n避免夸张词，用真实可见的细节建立信任。","categoryId":"writing","createdAt":"2026-10-09T06:00:00.000Z","updatedAt":"2026-10-09T06:00:00.000Z","version":1,"pinned":false,"deletedAt":null}],
+  "drafts": []
+}
