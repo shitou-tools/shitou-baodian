@@ -1,0 +1,40 @@
+{
+  "Version": "1",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "oss:ListObjects"
+      ],
+      "Resource": [
+        "acs:oss:*:*:your-backup-bucket"
+      ],
+      "Condition": {
+        "StringLike": {
+          "oss:Prefix": [
+            "prompt-box-backups/*"
+          ]
+        }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "oss:GetObject",
+        "oss:PutObject"
+      ],
+      "Resource": [
+        "acs:oss:*:*:your-backup-bucket/prompt-box-backups/*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "oss:DeleteObject"
+      ],
+      "Resource": [
+        "acs:oss:*:*:your-backup-bucket/prompt-box-backups/v1/*"
+      ]
+    }
+  ]
+}
